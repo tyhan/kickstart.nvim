@@ -612,6 +612,7 @@ require('lazy').setup({
             },
           },
         },
+        terraformls = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -855,7 +856,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc', 'terraform', 'hcl' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
